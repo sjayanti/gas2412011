@@ -101,6 +101,7 @@
     <Compile Include="web\core\ViewDepartmentsInDepartment.cs" />
     <Compile Include="web\core\WebFormTemplate.cs" />
     <Compile Include="web\infrastructure\BasicDependencyContainer.cs" />
+    <Compile Include="web\infrastructure\BasicDependencyRegistry.cs" />
     <Compile Include="web\model\Department.cs" />
     <Compile Include="web\model\Product.cs" />
   </ItemGroup>
