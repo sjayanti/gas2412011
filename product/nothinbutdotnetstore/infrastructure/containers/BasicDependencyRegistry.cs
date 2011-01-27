@@ -14,15 +14,10 @@ namespace nothinbutdotnetstore.infrastructure.containers
 
         public DependencyFactory get_the_factory_for(Type dependency)
         {
-            try
-            {
-                return factories[dependency];
-            }
-            catch (KeyNotFoundException ex)
-            {
-                throw new MissingDependencyFactoryException(dependency, ex);
-            }
+            return ExceptionHandler.throw_if<KeyNotFoundException, DependencyFactory>(() => factories[dependency], (exception) => new MissingDependencyFactoryException(dependency, exception));
         }
+
+      
 
     }
 }

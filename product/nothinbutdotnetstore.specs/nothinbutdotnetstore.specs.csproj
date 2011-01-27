@@ -68,6 +68,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExceptionHandlerSpecs.cs" />
     <Compile Include="infrastructure\BasicDependencyContainerSpecs.cs" />
     <Compile Include="infrastructure\BasicDependencyRegistrySpecs.cs" />
     <Compile Include="infrastructure\ContainerSpecs.cs" />
